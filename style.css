@@ -92,3 +92,93 @@
         padding: 10px 15px;
       }
     }
+  .creative-section {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+  }
+  .creative-section .subtitle {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  .creative-section .title {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .creative-section .title .highlight {
+    color: #5e46ff;
+  }
+  .creative-section .description {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+  }
+  .creative-section .button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .creative-section .btn-read-more {
+    background-color: #5e46ff;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  .creative-section .btn-read-more:hover {
+    background-color: #4736cc;
+  }
+  .creative-section .contact {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .creative-section .contact-icon {
+    background-color: white;
+    color: #5e46ff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    user-select: none;
+  }
+    .top-bar {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(90deg, #c83b3b 0%, #d4b6ff 50%, #dba9b1 100%);
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .top-bar div {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .top-bar div:last-child {
+    border-right: none;
+  }
