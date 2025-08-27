@@ -1,0 +1,94 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: black; /* Black */
+    }
+
+    .navbar .nav-link {
+      color: white;
+      font-weight: 500;
+      padding: 12px 16px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ff3c3c; /* Red on hover */
+    }
+
+    /* Hover Dropdown Logic */
+    .nav-item.dropdown {
+      position: relative;
+    }
+
+    .nav-item.dropdown:hover .dropdown-hover {
+      display: block;
+    }
+
+    .dropdown-hover {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      background: rgba(255, 0, 0, 0.1); /* Light red translucent */
+      padding: 10px 0;
+      z-index: 999;
+      border: 1px solid #ff3c3c;
+      border-radius: 4px;
+    }
+
+    .dropdown-hover a {
+      color: white;
+      padding: 10px 20px;
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .dropdown-hover a:hover {
+      background-color: #ff3c3c; /* Red background on hover */
+      color: white;
+    }
+
+    .get-ticket-btn {
+      background-color: #ff3c3c; /* Red button */
+      color: white;
+      font-weight: bold;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .get-ticket-btn:hover {
+      background-color: white;
+      color: #ff3c3c;
+    }
+
+    .menu-icon {
+      font-size: 1.3rem;
+      color: white;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 991.98px) {
+      .dropdown-hover {
+        position: static;
+        display: block;
+        background: none;
+        border: none;
+        padding: 0;
+      }
+
+      .dropdown-hover a {
+        padding: 10px 15px;
+      }
+    }
