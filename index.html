@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daevnt Navbar - Red Black White Theme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: black; /* Black */
+    }
+
+    .navbar .nav-link {
+      color: white;
+      font-weight: 500;
+      padding: 12px 16px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ff3c3c; /* Red on hover */
+    }
+
+    /* Hover Dropdown Logic */
+    .nav-item.dropdown {
+      position: relative;
+    }
+
+    .nav-item.dropdown:hover .dropdown-hover {
+      display: block;
+    }
+
+    .dropdown-hover {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      background: rgba(255, 0, 0, 0.1); /* Light red translucent */
+      padding: 10px 0;
+      z-index: 999;
+      border: 1px solid #ff3c3c;
+      border-radius: 4px;
+    }
+
+    .dropdown-hover a {
+      color: white;
+      padding: 10px 20px;
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .dropdown-hover a:hover {
+      background-color: #ff3c3c; /* Red background on hover */
+      color: white;
+    }
+
+    .get-ticket-btn {
+      background-color: #ff3c3c; /* Red button */
+      color: white;
+      font-weight: bold;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .get-ticket-btn:hover {
+      background-color: white;
+      color: #ff3c3c;
+    }
+
+    .menu-icon {
+      font-size: 1.3rem;
+      color: white;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 991.98px) {
+      .dropdown-hover {
+        position: static;
+        display: block;
+        background: none;
+        border: none;
+        padding: 0;
+      }
+
+      .dropdown-hover a {
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid px-4">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./images/logo.svg" alt="Logo" style="height: 40px;" />
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Center Nav Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- HOME -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Home</a>
+          <div class="dropdown-hover">
+            <a href="#">Overview</a>
+            <a href="#">Intro</a>
+            <a href="#">Highlights</a>
+          </div>
+        </li>
+
+        <!-- PAGES -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Pages</a>
+          <div class="dropdown-hover">
+            <a href="#">About Us</a>
+            <a href="#">Our Team</a>
+            <a href="#">Pricing</a>
+          </div>
+        </li>
+
+        <!-- BLOG -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Blog</a>
+          <div class="dropdown-hover">
+            <a href="#">Blog Grid</a>
+            <a href="#">Blog Single</a>
+            <a href="#">Categories</a>
+          </div>
+        </li>
+
+        <!-- EVENTS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Events</a>
+          <div class="dropdown-hover">
+            <a href="#">Event</a>
+            <a href="#">Event Grid</a>
+            <a href="#">Event Details</a>
+          </div>
+        </li>
+
+        <!-- CONTACT -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Contact</a>
+          <div class="dropdown-hover">
+            <a href="#">Contact Form</a>
+            <a href="#">Support</a>
+            <a href="#">Location</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Side Icons -->
+    <div class="d-flex align-items-center">
+      <i class="fas fa-th menu-icon"></i>
+      <a class="btn get-ticket-btn" href="#">GET TICKET</a>
+    </div>
+  </div>
+</nav>
+<div id="daevntCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-top: 20px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#daevntCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#daevntCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#daevntCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="max-height: 500px; overflow: hidden; border-radius: 10px;">
+    <div class="carousel-item active">
+      <img src="./images/creative-conference.png" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #ff3c3c;">Designing the Future</h5>
+        <p style="color: white;">Innovative events for next-gen thinkers</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/creative-conference-two.png" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #ff3c3c;">Connect & Collaborate</h5>
+        <p style="color: white;">Meet like-minded creators</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/creative-conference-three.png" class="d-block w-100" alt="Slide 3" style="object-fit: cover; height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #ff3c3c;">Inspire & Learn</h5>
+        <p style="color: white;">Workshops and talks from industry leaders</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#daevntCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#daevntCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
