@@ -437,14 +437,14 @@ body {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background-color: #6b4dff;
+  background-color: red;
   border-radius: 50%;
   margin-right: 8px;
   vertical-align: middle;
 }
 
 .future-events .buy-ticket-btn {
-  background-color: #6b4dff;
+  background-color: red;
   border: none;
   color: white;
   font-weight: 700;
@@ -458,7 +458,7 @@ body {
 }
 
 .future-events .buy-ticket-btn:hover {
-  background-color: #5840d8;
+  background-color: red;
 }
 
 /* Responsive */
@@ -564,7 +564,7 @@ body {
 }
 
 .btn-purple {
-  background-color: #6f42c1;
+  background-color: red;
   border: none;
   padding: 0.75rem 2.2rem;
   font-weight: 600;
@@ -573,12 +573,12 @@ body {
   margin-top: 2.5rem;
   border-radius: 0;
   text-transform: uppercase;
-  box-shadow: 0 0 15px #6f42c1;
+  box-shadow: 0 0 15px red;
   transition: background-color 0.3s ease;
 }
 
 .btn-purple:hover {
-  background-color: #572ab7;
+  background-color: red;
 }
 
 .right-content {
@@ -614,7 +614,7 @@ body {
 .dot-purple {
   width: 12px;
   height: 12px;
-  background-color: #6f42c1;
+  background-color: red;
   border-radius: 50%;
   display: inline-block;
 }
@@ -637,14 +637,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #6f42c1;
+  color: red;
   cursor: pointer;
   box-shadow: 0 0 15px rgba(111, 66, 193, 0.6);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .link-circle:hover {
-  background-color: #6f42c1;
+  background-color: red;
   color: white;
   text-decoration: none;
 }
@@ -761,5 +761,58 @@ body {
   .speaker-card-large {
     flex: 0 0 220px;
     height: auto;
+  }
+}
+.sponsor-section {
+  background-color: #6c33f7; /* purple background */
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 100vw;  /* use full viewport width */
+  margin-left: calc(-50vw + 50%); /* center content while expanding full width */
+  box-sizing: border-box;
+}
+
+.sponsor-section h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.sponsor-row {
+  width: 100%;
+  padding: 0 1rem; /* optional padding to avoid touching edges */
+  margin: 0 auto;
+}
+
+.sponsor-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.sponsor-icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+}
+
+@media (min-width: 768px) {
+  .sponsor-row {
+    justify-content: space-around !important;
+    padding: 0;
+  }
+  .sponsor-item {
+    margin-bottom: 0;
+    width: auto;
+    max-width: none;
   }
 }
