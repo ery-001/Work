@@ -358,3 +358,408 @@ body {
 .top-buttons button:hover {
   background-color: #cc3232;   /* Darker red on hover */
 }
+
+.future-events {
+  background-color: #0a0a0a;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.future-events .events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.future-events .events-header h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.future-events .view-all {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.future-events .event-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #2c2c2c;
+  padding: 20px 0 40px 0;
+  flex-wrap: wrap;
+}
+
+.future-events .event-item img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.future-events .event-info {
+  flex: 1 1 300px;
+}
+
+.future-events .event-info h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+.future-events .event-info p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.future-events .event-date-time {
+  text-align: right;
+  min-width: 160px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.future-events .event-date-time div {
+  margin-bottom: 8px;
+}
+
+.future-events .event-date-time .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #6b4dff;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.future-events .buy-ticket-btn {
+  background-color: #6b4dff;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 40px;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+.future-events .buy-ticket-btn:hover {
+  background-color: #5840d8;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .future-events .event-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .future-events .event-date-time {
+    text-align: left;
+    margin-top: 20px;
+    min-width: auto;
+  }
+
+  .future-events .buy-ticket-btn {
+    margin-left: 0;
+    margin-top: 20px;
+    align-self: stretch;
+    width: 100%;
+  }
+
+  .future-events .event-info {
+    width: 100%;
+  }
+
+  .future-events .event-item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+  .video-section {
+    position: relative;
+    overflow: hidden;
+  }
+  .video-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .play-video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255 255 255 / 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .play-video-btn:hover,
+  .play-video-btn:focus {
+    background: rgba(255 255 255 / 0.9);
+    outline: none;
+  }
+/* Existing styles unchanged */
+
+.speaker-section {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-custom {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.left-content {
+  max-width: 600px;
+}
+
+.small-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.3rem;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  border: none;
+  padding: 0.75rem 2.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  margin-top: 2.5rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #6f42c1;
+  transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #572ab7;
+}
+
+.right-content {
+  position: relative;
+  max-width: 420px;
+  flex-shrink: 0;
+}
+
+.speaker-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  display: block;
+  object-fit: cover;
+}
+
+.speaker-info {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  color: white;
+  z-index: 10;
+}
+
+.speaker-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dot-purple {
+  width: 12px;
+  height: 12px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.speaker-title {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.15rem;
+}
+
+.link-circle {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6f42c1;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(111, 66, 193, 0.6);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-circle:hover {
+  background-color: #6f42c1;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-custom {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .left-content {
+    max-width: 100%;
+  }
+
+  .right-content {
+    max-width: 320px;
+  }
+}
+
+/* New Large Image Section Styles */
+
+.speaker-gallery-large {
+  background-color: #0a0a0a;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  padding: 2rem 3rem 4rem;
+  margin-top: -2rem; /* pull up closer to speaker-section */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-wrap: nowrap;
+  overflow-x: auto; */
+  /* scroll-snap-type: x mandatory; */
+}
+
+/* .speaker-gallery-large::-webkit-scrollbar {
+  height: 8px;
+} */
+/* 
+.speaker-gallery-large::-webkit-scrollbar-thumb {
+  background: #6f42c1;
+  border-radius: 4px;
+} */
+
+.speaker-card-large {
+  flex: 0 0 350px;
+  background-color: #1a1a1a;
+  border-radius: 0.75rem;
+  /* box-shadow: 0 0 25px #6f42c1; */
+  overflow: hidden;
+  /* scroll-snap-align: start; */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.speaker-card-large:hover {
+  transform: scale(1.05);
+}
+
+.speaker-card-large img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid red;
+}
+
+.speaker-details-large {
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+
+.speaker-details-large h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.speaker-details-large p {
+  font-size: 1.1rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* Responsive for gallery */
+@media (max-width: 1024px) {
+  .speaker-gallery-large {
+    padding: 1.5rem 1.5rem 3rem;
+    gap: 1.5rem;
+  }
+  .speaker-card-large {
+    flex: 0 0 280px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .speaker-gallery-large {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .speaker-card-large {
+    flex: 0 0 220px;
+    height: auto;
+  }
+}
